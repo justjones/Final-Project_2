@@ -86,69 +86,6 @@ header {
     margin: 0 24px 0 48px;
 }
 
-.btn__menu {
-    background-color: transparent;
-    font-size: 40px;
-    text-align: center;
-    border: none;
-    color: #7342d6; 
-    display: none;   
-}
-
-.btn__menu, .fa-bars, .fa-times {
-    color: #6415ff;
-}
-
-.menu__backdrop {
-    position: absolute;
-    background-color: #242424;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 100;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 300ms ease;
-    opacity: 0;
-    visibility: hidden;
-
-}
-
-.menu--open .menu__backdrop {
-    visibility: visible;
-    opacity: 1;
-}
-
-.menu--open {
-    max-height: 100vh;
-    overflow-y: hidden;
-}
-
-.menu__links {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.menu__list {
-    padding: 32px 0;
-}
-
-.menu__link {
-    color: #ffffff;
-}
-
-.btn__menu--close {
-    position: absolute;
-    right: 20px;
-    top: 10px;
-    padding: 8px;
-    color: #ffffff;
-}
-
-
 .signup {
     background-color: #6415FF;
     color: #F7FAFC;
@@ -457,6 +394,10 @@ EASY TO GET STARTED
     line-height: 20px;
     margin-top: 16px;
     letter-spacing: 0.4px;
+}
+
+.easy__header {
+    line-height: 50px;
 }
 
 .easy__items {
@@ -869,8 +810,7 @@ TESTIMONIALS
     width: 100%;
 }
 .testomonial__img {
-    width: 640px;
-    height: 388px;
+    width: 100%;    
 }
 
 .stars__wrapper {
@@ -1270,5 +1210,145 @@ ul.footer__lists  {
     padding: 16px;
 }
 
+/* small phones, tablest, large smartphones */
 
 
+
+@media (max-width: 768px) {
+    #nav-menu {
+        display: none;
+    }
+    
+    .nav {   
+        background-color: rgb(218, 148, 148);
+        
+    }
+    
+    .nav__link-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .header {
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        
+    }
+
+    .hero__text .hero_h1 {
+        font-size: 28px;  
+    }
+
+    .hero__section {
+        flex-direction: column;
+    }
+
+    .quality__section {
+        flex-direction: column;
+    }
+
+    .quality__img--container {
+        display: none;
+    }
+
+    .steps__container .easy__row {
+        flex-direction: column;
+    }
+
+    .pricing__wrapper {
+        margin: 0 30px;
+    }
+
+    .text__wrapper .pricing__title{
+        font-size: 28px;
+    }
+
+   .values__introduction {
+        margin-left: 50%;
+    }
+    .values__principles h1 {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .values__subtitle {
+        margin-left: 10%;
+    }
+
+    .values__principles .btn {
+        margin-left: 30%;
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+
+    .values__wrapper .values__row {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .values__wrapper .values__text--column {
+        width: 100%;
+    }
+
+    .values__principles .principles__column {        
+        flex-direction: column;
+        text-align: center;
+        margin-left: 75px;
+    }
+
+    .values__img {
+        display: none;
+    }
+
+    .plan {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-width: 600px;
+        
+    }
+
+    .testomonial__section {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;                    
+    }
+
+    .testomonial__section .testomonial__img--container {
+        width: 75%;
+        margin-left: 20%;
+        margin-right: 20%;
+        
+    }
+
+    .cta__wrapper {
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .cta__wrapper .cta__headline {
+        margin-left: 0;
+    }
+
+    .cta__wrapper .cta__headline h5 {
+        font-size: 28px;
+        text-align: center;        
+    }
+
+    .btn__wrapper--cta {
+        display: flex;
+        margin-top: 8px;
+        gap: 16px;
+    }
+
+    .footer__wrapper {
+        padding: 28px;
+    }
+
+    .copyright__wrapper {
+        padding: 28px;
+    }
+}
