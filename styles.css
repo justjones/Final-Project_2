@@ -1249,7 +1249,7 @@ ul.footer__lists  {
     }
 
     .nav__link-wrapper {
-        display: flex;
+        display: none;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -1298,7 +1298,8 @@ ul.footer__lists  {
     }
 
     .quality__img--container {
-        display: none;
+        display: flex;
+        justify-content: center;
     }
 
     .quality__btn {
