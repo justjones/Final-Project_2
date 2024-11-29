@@ -1,3 +1,12 @@
+function openMenu () {
+    document.body.classList += " menu--open"
+}
+
+function closeMenu () {
+    document.body.classList.remove('menu--open')
+}
+
+
 let indexValue = 0; // Start with the first group
 
 function showSlide(index) {
@@ -34,12 +43,3 @@ inputs.forEach(input => {
         }
     });
 });
-
-
-function openMenu () {
-    document.body.classList += "menu--open"
-}
-
-function closeMenu () {
-    document.body.classList.remove('menu--open')
-}
